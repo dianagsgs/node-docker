@@ -58,7 +58,7 @@ if(task == "save"){
 } else if(task == "load") {
   // load last picture saved
   console.log("load");
-  let sql = "SELECT * FROM pictures";
+  let sql = "SELECT url FROM pictures";
   try {
     let loaded = db.get(sql,[],(err, row) => {
       if (err) console.log("error: " + err);
