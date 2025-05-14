@@ -1,0 +1,24 @@
+In your terminal do the following actions
+
+Clone repo by running
+```git clone https://github.com/dianagsgs/node-docker.git```
+
+Install all dependencies by running
+```npm install```
+
+Setup the database by running
+```node db.js```
+
+Create docker image by running
+```docker build --tag node-docker .```
+
+Run containerized application by running
+```docker run node-docker save [animal] [num_pics]```
+or
+```docker run node-docker load```
+
+Where the "load" command loads the URL of the last image stored (if any),
+while the "save" command saves the specified number of animal pictures for
+the animal selected. Note that:
+- [animal] can be any of "cat", "dog", or "duck"
+- [num_pics] can be any integer between 1 and 20

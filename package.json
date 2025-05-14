@@ -13,6 +13,7 @@
   "dependencies": {
     "node-fetch": "^3.3.2",
     "ronin-mocks": "^0.1.11",
-    "ronin-server": "^0.1.3"
+    "ronin-server": "^0.1.3",
+    "sqlite3": "^5.1.7"
   }
 }
